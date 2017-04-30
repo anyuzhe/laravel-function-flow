@@ -1,0 +1,27 @@
+{
+  "name": "anyuzhe/laravel-function-flow",
+  "description": "function-flow for PHP",
+  "homepage": "http://blog.anyuzhe.com/blog",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "ZL",
+      "homepage": "http://blog.anyuzhe.com"
+    }
+  ],
+  "require": {
+    "illuminate/support":">=5.0",
+    "illuminate/container":">=5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Anyuzhe\\LaravelFunctionFlow\\": "src"
+    }
+  },
+  "scripts": {
+    "post-package-install": [
+      "php artisan make:provider FunctionFlowProvider"
+    ]
+  }
+}
